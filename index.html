@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитная карточка | Герман</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f5;
+            --card-bg: #ffffff;
+            --primary-color: #2e7d32; /* Тёмно-зеленый */
+            --accent-color: #4caf50; /* Ярко-зеленый */
+            --text-color: #2c3e50;
+            --text-muted: #616161;
+            --danger-color: #d32f2f;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.1);
+            border-top: 8px solid var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid #e8f5e9;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        .highlight-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .experience-item {
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .experience-num {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .exception-box {
+            background-color: #ffebee;
+            border-left: 4px solid var(--danger-color);
+            padding: 15px 20px;
+            border-radius: 4px;
+            color: #c62828;
+            font-weight: 500;
+        }
+
+        .contacts {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .contacts li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 1.05rem;
+        }
+
+        .contacts a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 5px;
+            transition: color 0.2s;
+        }
+
+        .contacts a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .emoji {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><b>ВИЗИТНАЯ КАРТОЧКА</b></h1>
+
+        <div class="highlight-box">
+            <p><strong>Доброго вам дня! Меня зовут Герман.</strong></p>
+            <p>Мне 18 лет. На данный момент обучаюсь очно, но умею совмещать работу и учебу при условии зарплаты в 110+ тыс. рублей или на гибридном/удаленном графике (а лучше и то, и другое). Ознакомлен с работами AI, есть крутой компьютер и хороший интернет, стрессоустойчивость и многозадачность.</p>
+        </div>
+
+        <h2>Мой опыт работы</h2>
+        <p>По опыту работы единственное, что может заинтересовать, это:</p>
+        
+        <div class="experience-item">
+            <span class="experience-num">1</span> — <strong>Логист (Экспедиторство) 6 месяцев.</strong><br>
+            Оттуда опыт в B2B продажах, понимание Транспортных законов на габарит и негабарит, устное знакомство с бухгалтерией и юридическими документами.
+        </div>
+
+        <div class="experience-item" style="color: var(--text-muted); font-style: italic;">
+            <span class="experience-num">2, 3, 4...</span> остальной мой опыт складывается на физических работах и работах, где работают руками, а головой не думают. Поэтому здесь они не представлены в списке.
+        </div>
+
+        <h2>Что я ищу сейчас</h2>
+        <p>На данный момент я в поиске работы на долгий срок. Рассмотрю абсолютно любые предложения.</p>
+
+        <div class="exception-box">
+            <span class="emoji">❌</span> <strong>ИСКЛЮЧЕНИЕ:</strong> НЕ рефералка и НЕ курьер, НЕ Испытательный срок в ∞ месяцев !!!
+        </div>
+
+        <p style="margin-top: 25px;">Этот текст ознакомительный для первоначального знакомства. Если именно вы заинтересованы в моей кандидатуре, прошу обратиться по видам связи ниже.</p>
+
+        <h2>КОНТАКТЫ</h2>
+        <ul class="contacts">
+            <li><span class="emoji">💬</span> Telegram: <a href="https://t.me" target="_blank">@doramcec</a></li>
+            <li><span class="emoji">📧</span> Email: <a href="mailto:armorymarka@gmail.com">armorymarka@gmail.com</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
